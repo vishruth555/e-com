@@ -1,9 +1,12 @@
+body {
+    color: #3c0f0f;
+}
 
- .banner-image{ padding-top: 80px;    
+.banner-image{ padding-top: 80px;    
               padding-bottom: 50px; 
               text-align: center;     
               color: #f5efef; 
-              background: url(intro-bg_3.webp) no-repeat center ; 
+              background: url(intro-bg_5.jpg) no-repeat center ; 
               background-size: cover;
 }
 
@@ -11,7 +14,7 @@
     position:relative; 
     padding-top: 6%; 
     padding-bottom: 6%; 
-    margin-top: 12%; 
+    margin-top: 14%; 
     margin-bottom: 12%; 
     background-color: rgba(0, 0, 0, 0.7); 
     max-width: 660px;
@@ -64,7 +67,7 @@ footer{
 
 
 .quantity {
-    background-color: rgba(246, 5, 5, 0.6);
+    background-color: rgba(255, 255, 255, 0.3);
     color: white;
     border-radius: 40%;
     padding: 5px;
@@ -80,13 +83,14 @@ footer{
     top: 0;
     left: 100%;
     width: 500px;
-    background-color: #453E3B;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     height: 100vh;
     transition: 0.5s;
 }
 
 .card h1 {
-    color: #E8BC0E;
+    color: #ededec;
     font-weight: 100;
     margin: 0;
     padding: 0 20px;
@@ -102,7 +106,7 @@ footer{
     grid-template-columns: repeat(2,1fr);
 }
 .card .checkOut div {
-    background-color: #E8BC0E;
+    background-color: #ededec;
     width: 100%;
     height: 70px;
     display: flex;
@@ -111,13 +115,22 @@ footer{
     font-weight: bold;
     cursor: pointer;
     border-radius: 0%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
 .card .checkOut div:nth-child(2){
     background-color: #1C1F25;
     color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
 .active .card {
     left: calc(100% - 500px);
+}
+main {
+    transition: 0.5s;
+}
+.active main {
+    filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.);
 }
 
 .container button {

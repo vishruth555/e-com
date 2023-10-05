@@ -153,7 +153,7 @@ function reloadCard(){
             listCard.appendChild(newDiv);
         }
     })
-    total.innerText = totalPrice.toLocaleString();
+    total.innerText = "Rs. " + totalPrice.toLocaleString();
     quantity.innerText = count;
 }
 
